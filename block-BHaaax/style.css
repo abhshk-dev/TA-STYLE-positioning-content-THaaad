@@ -48,29 +48,76 @@ table {
 }
 
 /* ---- Custom Styling ----- */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
 
+body{
+    font-size: 16px;
+    line-height: 1.5;
+}
 .header{
     background-color:rgb(221, 189, 141);
-    text-align: left;
-    font-size: 24px;
-    padding: 18px;
-    margin-bottom: 80px;
+    font-size: 0px;
+    padding: 18px 0;
 }
-.brand-logo{
-    color: rgb(31, 16, 16);
-    padding: 10px;
-    margin: 20px;
+.brand img{
+    width:80px;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+.brand , .navigation{
+    display: inline-block;
+    vertical-align: middle;
+}
+.navigation{
+    width: calc(100% - 80px);
+    font-size: 16px;
+    text-align: right;
+}
+.navigation a{
+    font-size: 20px;
+    text-decoration: none;
+    color: cadetblue;
+    text-transform: uppercase;
+    margin-left: 32px;
+}
+.article-img{
+    width: 400px;
+}
+.col{
+    width: 50%;
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top;
+}
+.article{
+    font-size: 0;
+    padding: 60px 0;
+}
+.article-heading{
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+.article-text{
+    font-size: 20px;
+    line-height: 1.7;
+}
+.article-col{
+    padding-right: 32px;
 }
 
-.navigation{
-    display: inline-block;
-    margin-left: 70%;
-    font-size: 18px;
-    font-weight: 400;
-    color: cadetblue;
+.footer{
+    text-align: center;
+    padding: 32px 0;
+    background-color: rgb(221, 189, 141);;
 }
-a{
+.footer a{
+    margin: 0 16px;
     text-decoration: none;
-    margin: 10px;
-    color:rgb(31, 143, 31);
+    font-size: 18px;
+    color:whitesmoke;
 }
