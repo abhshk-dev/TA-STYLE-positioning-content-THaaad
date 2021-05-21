@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --- Custom styling --- */
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: lightgoldenrodyellow;
+    
+    
+}
+
+.header{
+    background-color: #0f1316;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    position: fixed;
+    top: 0px;
+    
+}
+.brand{
+    float: left;
+    margin-left: 30px;
+}
+
+.nav{
+    float: right;
+    padding: 0 42px;
+
+}
+.nav a{
+    font-size: 18px;
+    color: gainsboro;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 14px;
+}
+.brand img{
+    width: 180px;
+    object-fit: contain;
+    vertical-align: middle;
+    
+}
+/* --- clearfix class --- */
+.clearfix::before, .clearfix::after{
+    content:"";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+/* ---   *** *** ***    ---*/
+.section{
+    padding-top: 120px;
+    
+
+}
+
+/* --- Article Section Styling ---  */
+
+article{
+    width: 100%;
+    padding: 50px;
+    margin: 100px auto;
+    background-color: lightgoldenrodyellow;
+    border-top: 2px solid grey;
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    color:lightslategray;
+    line-height: 1.67;
+    font-size: 18px;
+    padding: 10px ;
+
+}
+.text{
+    max-width: 50%;
+    padding: 20px;
+    float: left;
+}
+img{
+    width: 550px;
+    object-fit: cover;
+    vertical-align: bottom;
+    
+}
+.image{
+
+    float:right;
+    font-size: 0;
+    padding:20px 0;
+    margin:75px 0;
+    margin-right: 50px;
+}
+
+/* -----  Gallery Section  -----  */
+h2{
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.row1{
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    padding: 100px 0;
+    border-top: 2px solid grey;
+}
+.col{
+    width: 30.333%;
+    padding: 2%;
+    margin: 2% auto;
+    float: left;
+}
+.row2{
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    padding:100px 0;
+    border: 2px solid grey;
+}
+/*-----Fixed Button-----*/
+.button{
+    width: 150px;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius:20px;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* ----Footer Section ----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color: #0f1316;
+    padding: 50px 150px;
+}
+.footer-nav a{
+    color: gainsboro;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-right: 14px;
+}
+
